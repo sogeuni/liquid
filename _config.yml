@@ -1,0 +1,34 @@
+title: Liquid template language
+description: Liquid is a template language and accompanying rendering engine. It is built for security, so is perfect for rendering custom templates from your users.
+
+# Build settings
+baseurl:                /liquid # the subpath of your site, e.g. /blog/
+url:                    http://liquidmarkup.org # the base hostname & protocol for your site
+permalink:              pretty
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gruntfile.js
+  - package.json
+  - node_modules
+keep_files:             ["css"]
+
+# Plugins
+gems:
+  - jekyll-redirect-from
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+  - scope:
+      path: "filters"
+    values:
+      type: filter
+  - scope:
+      path: "tags"
+    values:
+      type: tag
