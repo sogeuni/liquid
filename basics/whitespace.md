@@ -1,7 +1,8 @@
 ---
-title: Whitespace control
-description: An overview of controlling whitespace between code in the Liquid template language.
+title: 공백 제어
+description: Liquid 템플릿 언어에서 코드 사이의 공백을 제어하는 법에 대한 개요
 ---
+
 
 In Liquid, you can include a hyphen in your tag syntax `{% raw %}{{-{% endraw %}`, `{% raw %}-}}{% endraw %}`, `{% raw %}{%-{% endraw %}`, and `{% raw %}-%}{% endraw %}` to strip whitespace from the left or right side of a rendered tag.
 

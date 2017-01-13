@@ -3,8 +3,6 @@ title: 소개
 description: Liquid 템플릿 언어의 객체와 태그 및 필터에 대한 개요
 ---
 
-※ 이 사이트는 [2016년 12월 19일자 Liquid 문서](https://github.com/Shopify/liquid/tree/61848f980b8019fc8be528400eca742622f771f2)의 번역본입니다. 번역에 관련된 이슈는 [이 곳](https://github.com/sogeuni/liquid-manual)으로 부탁드립니다.
-
 Liquid 코드는 [**객체**](#objects), [**태그**](#tags), 및 [**필터**](#filters)로 분류할 수 있습니다.
 
 ## 객체(Objects)
