@@ -1,9 +1,9 @@
-title: Liquid template language
-description: Liquid is a template language and accompanying rendering engine. It is built for security, so is perfect for rendering custom templates from your users.
+title: Liquid 템플릿 언어
+description: Liquid는 템플릿 언어이며 렌더링 엔진과 함께합니다. 보안을 위해 만들어졌기 때문에, 사용자가 정의한 템플릿을 렌더링하는 데 최적화되어 있습니다.
 
 # Build settings
-baseurl:                /liquid # the subpath of your site, e.g. /blog/
-url:                    http://liquidmarkup.org # the base hostname & protocol for your site
+baseurl:                /liquid-manual # the subpath of your site, e.g. /blog/
+url:                    https://sogn.io # the base hostname & protocol for your site
 permalink:              pretty
 exclude:
   - README.md

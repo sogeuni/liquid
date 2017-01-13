@@ -1,50 +1,50 @@
 ---
-title: Operators
-description: Using operators to perform calculations in the Liquid template language.
+title: 연산자
+description: Liquid 템플릿 언어에서 연산자를 사용하여 계산을 수행합니다.
 ---
 
-Liquid includes many logical and comparison operators.
+Liquid는 다양한 논리 연산자와 비교 연산자를 가지고 있습니다.
 
-## Basic operators
+## 기본 연산자
 
 <table>
   <tbody>
     <tr>
       <td><code>==</code></td>
-      <td>equals</td>
+      <td>일치함</td>
     </tr>
     <tr>
       <td><code>!=</code></td>
-      <td>does not equal</td>
+      <td>일치하지 않음</td>
     </tr>
     <tr>
       <td><code>&gt;</code></td>
-      <td>greater than</td>
+      <td>초과</td>
     </tr>
     <tr>
       <td><code>&lt;</code></td>
-      <td>less than</td>
+      <td>미만</td>
     </tr>
     <tr>
       <td><code>&gt;=</code></td>
-      <td>greater than or equal to</td>
+      <td>이상</td>
     </tr>
     <tr>
       <td><code>&lt;=</code></td>
-      <td>less than or equal to</td>
+      <td>이하</td>
     </tr>
     <tr>
       <td><code>or</code></td>
-      <td>logical or</td>
+      <td>논리합</td>
     </tr>
     <tr>
       <td><code>and</code></td>
-      <td>logical and</td>
+      <td>논리곱</td>
     </tr>
   </tbody>
 </table>
 
-For example:
+예제:
 
 ```liquid
 {% raw %}
@@ -54,7 +54,7 @@ For example:
 {% endraw %}
 ```
 
-You can use multiple operators in a tag:
+태그 내에서 여러개의 연산자를 사용할 수 있습니다:
 
 ```liquid
 {% raw %}
@@ -66,7 +66,7 @@ You can use multiple operators in a tag:
 
 ## contains
 
-`contains` checks for the presence of a substring inside a string.
+`contains`는 문자열 안에 서브스트링이 있는지 검사합니다.
 
 ```liquid
 {% raw %}
@@ -76,7 +76,7 @@ You can use multiple operators in a tag:
 {% endraw %}
 ```
 
-`contains` can also check for the presence of a string in an array of strings.
+또한, `contains'는 문자열들을 가지는 배열에서 특정 문자열이 있는지를 검사할 수 있습니다.
 
 ```liquid
 {% raw %}
@@ -86,4 +86,4 @@ You can use multiple operators in a tag:
 {% endraw %}
 ```
 
-`contains` can only search strings. You cannot use it to check for an object in an array of objects.
+`contains`는 문자열만 검색할 수 있습니다. 객체들을 가진 배열에서 객체를 찾는데 사용할 수는 없습니다.

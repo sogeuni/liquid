@@ -1,9 +1,9 @@
 ---
-title: Types
-description: An overview of data types in the Liquid template language.
+title: 데이터 타입
+description: Liquid 템플릿 언어의 데이터 타입에 대한 개요
 ---
 
-Liquid objects can have one of six types:
+Liquid 객체는 다음 5가지 타입 중 하나를 가질 수 있습니다.
 
 - [String](#string)
 - [Number](#number)
@@ -11,11 +11,11 @@ Liquid objects can have one of six types:
 - [Nil](#nil)
 - [Array](#array)
 
-You can initialize Liquid variables with the [assign]({{ "/tags/variable/#assign" | prepend: site.baseurl }}) or [capture]({{ "/tags/variable/#capture" | prepend: site.baseurl }}) tags.
+Liquid 변수는 [assign]({{ "/tags/variable/#assign" | prepend: site.baseurl }})이나 [capture]({{ "/tags/variable/#capture" | prepend: site.baseurl }}) 태그를 이용하여 초기화 할 수 있습니다.
 
-## String
+## 문자열(String)
 
-Declare a string by wrapping a variable's value in single or double quotes:
+변수의 값을 작은 따옴표나 큰 따옴표로 묶어 문자열을 선언합니다:
 
 ```liquid
 {% raw %}
@@ -23,9 +23,9 @@ Declare a string by wrapping a variable's value in single or double quotes:
 {% endraw %}
 ```
 
-## Number
+## 숫자(Number)
 
-Numbers include floats and integers:
+숫자는 정수형과 실수형을 포함합니다:
 
 ```liquid
 {% raw %}
@@ -36,7 +36,7 @@ Numbers include floats and integers:
 
 ## Boolean
 
-Booleans are either `true` or `false`. No quotations are necessary when declaring a boolean:
+불리언은 `true` 혹은 `false` 입니다. 불리언 값을 선언할 때는 따옴표가 필요없습니다:
 
 ```liquid
 {% raw %}
@@ -47,11 +47,11 @@ Booleans are either `true` or `false`. No quotations are necessary when declarin
 
 ## Nil
 
-Nil is a special empty value that is returned when Liquid code has no results. It is **not** a string with the characters "nil".
+Nil은 Liquid 코드의 결과가 없을 때 리턴하는 특수한 빈 값입니다. 이것은 문자열 "nil"이 **아닙니다**.
 
-Nil is [treated as false]({{ "/basics/truthy-and-falsy" | prepend: site.baseurl }}) in the conditions of `if` blocks and other Liquid tags that check the truthfulness of a statement.
+Nil은 `if` 블록의 조건문과 다른 체크 구문의 태그에서 [false로 간주]({{ "/basics/truthy-and-falsy" | prepend: site.baseurl }})합니다.
 
-In the following example, if the user does not exist (that is, `user` returns `nil`), Liquid will not print the greeting:
+다음 예제에서 user가 존재하지 않으면(`user`가 `nil`을 리턴하면), Liquid는 인사말을 출력하지 않습니다.
 
 ```liquid
 {% raw %}
@@ -61,29 +61,29 @@ In the following example, if the user does not exist (that is, `user` returns `n
 {% endraw %}
 ```
 
-Tags or outputs that return `nil` will not print anything to the page.
+`nil`을 리턴하는 태그 또는 결과는 페이지에 어떤 것도 출력하지 않습니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 The current user is {{ user.name }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 The current user is
 ```
 
-## Array
+## 배열(Array)
 
-Arrays hold lists of variables of any type.
+배열은 특정 타입의 변수의 리스트를 가집니다.
 
-### Accessing items in arrays
+### 배열의 아이템에 접근하기
 
-To access all the items in an array, you can loop through each item in the array using an [iteration tag]({{ "/tags/iteration" | prepend: site.baseurl }}).
+[반복 태그]({{ "/tags/iteration" | prepend: site.baseurl }})를 사용하여 배열의 각 항목들에 대해 반복해서 모두 접근이 가능합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
@@ -93,18 +93,18 @@ To access all the items in an array, you can loop through each item in the array
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 {% raw %}
 Tobi Laura Tetsuro Adam
 {% endraw %}
 ```
 
-### Accessing specific items in arrays
+### 배열의 특정 아이템에 접근하기
 
-You can use square bracket `[` `]` notation to access a specific item in an array. Array indexing starts at zero.
+대괄호 `[` `]` 표기를 사용해서 배열의 특정 아이템에 접근할 수 있습니다. 배열의 인덱스는 0부터 시작합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
@@ -114,15 +114,15 @@ You can use square bracket `[` `]` notation to access a specific item in an arra
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 Tobi
 Laura
 Adam
 ```
 
-### Initializing arrays
+### 배열의 초기화
 
-You cannot initialize arrays using only Liquid.
+Liquid만 사용해서 배열을 초기화 할 수는 없습니다.
 
-You can, however, use the [split]({{ "/filters/split" | prepend: site.baseurl }}) filter to break a string into an array of substrings.
+하지만, [split]({{ "/filters/split" | prepend: site.baseurl }}) 필터를 사용하여 문자열을 서브스트링의 배열로 만들 수 있습니다.
