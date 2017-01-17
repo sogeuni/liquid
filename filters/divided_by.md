@@ -7,26 +7,26 @@ Divides a number by the specified number.
 
 The result is rounded down to the nearest integer (that is, the [floor]({{ site.baseurl }}/filters/floor)) if the divisor is an integer.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {{ 16 | divided_by: 4 }}
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {{ 16 | divided_by: 4 }}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {{ 5 | divided_by: 3 }}
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {{ 5 | divided_by: 3 }}
 ```
@@ -37,28 +37,28 @@ The result is rounded down to the nearest integer (that is, the [floor]({{ site.
 
 For example, here the divisor is an integer:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {{ 20 | divided_by: 7 }}
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {{ 20 | divided_by: 7 }}
 ```
 
 Here it is a float:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {{ 20 | divided_by: 7.0 }}
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {{ 20 | divided_by: 7.0 }}
 ```
@@ -69,7 +69,7 @@ You might want to use a variable as a divisor, in which case you can't simply ad
 
 In this example, we're dividing by a variable that contains an integer, so we get an integer:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {% assign my_integer = 7 %}
@@ -77,7 +77,7 @@ In this example, we're dividing by a variable that contains an integer, so we ge
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {% assign my_integer = 7 %}
 {{ 20 | divided_by: my_integer }}
@@ -85,7 +85,7 @@ In this example, we're dividing by a variable that contains an integer, so we ge
 
 Here, we [multiply]({{ site.baseurl}}/filters/times) the variable by `1.0` to get a float, then divide by the float instead:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {% assign my_integer = 7 %}
@@ -94,7 +94,7 @@ Here, we [multiply]({{ site.baseurl}}/filters/times) the variable by `1.0` to ge
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {% assign my_integer = 7 %}
 {% assign my_float = my_integer | times: 1.0 %}

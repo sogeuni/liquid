@@ -1,15 +1,15 @@
 ---
-title: Control flow
-description: An overview of control flow and conditional tags in the Liquid template language.
+title: 제어 흐름
+description: Liquid 템플릿 언어의 제어 흐름 및 조건부 태그에 대한 개요
 ---
 
-Control flow tags can change the information Liquid shows using programming logic.
+제어 흐름 태그는 프로그래밍 로직을 사용하여 Liquid가 보여주는 정보를 변경할 수 있습니다.
 
 ## if
 
-Executes a block of code only if a certain condition is `true`.
+특정 조건이 `true`일 경우에만 코드 블럭을 실행합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% if product.title == 'Awesome Shoes' %}
@@ -18,16 +18,16 @@ Executes a block of code only if a certain condition is `true`.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 These shoes are awesome!
 ```
 
 ## unless
 
-The opposite of `if` – executes a block of code only if a certain condition is **not** met.
+`if`의 반대 – 특정 조건이 **충족되지 않을 시**에만 코드 블록을 실행합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% unless product.title == 'Awesome Shoes' %}
@@ -36,12 +36,12 @@ The opposite of `if` – executes a block of code only if a certain condition is
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 These shoes are not awesome.
 ```
 
-This would be the equivalent of doing the following:
+이것은 다음과 같이 실행하는 것과 동일합니다:
 
 ```liquid
 {% raw %}
@@ -53,9 +53,9 @@ This would be the equivalent of doing the following:
 
 ## elsif / else
 
-Adds more conditions within an `if` or `unless` block.
+`if` 혹은 `unless` 블록에 더 많은 조건을 추가합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- If customer.name = 'anonymous' -->
@@ -69,16 +69,16 @@ Adds more conditions within an `if` or `unless` block.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 Hey Anonymous!
 ```
 
 ## case/when
 
-Creates a switch statement to compare a variable with different values. `case` initializes the switch statement, and `when` compares its values.
+변수를 다른 값과 비교하는 switch 문을 작성합니다. `case`는 switch 구문을 초기화 하고 `when`은 값을 비교 합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign handle = 'cake' %}
@@ -93,7 +93,7 @@ Creates a switch statement to compare a variable with different values. `case` i
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 This is a cake
 ```

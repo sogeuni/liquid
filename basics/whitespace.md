@@ -3,12 +3,12 @@ title: 공백 제어
 description: Liquid 템플릿 언어에서 코드 사이의 공백을 제어하는 법에 대한 개요
 ---
 
-
+Liquid에서 
 In Liquid, you can include a hyphen in your tag syntax `{% raw %}{{-{% endraw %}`, `{% raw %}-}}{% endraw %}`, `{% raw %}{%-{% endraw %}`, and `{% raw %}-%}{% endraw %}` to strip whitespace from the left or right side of a rendered tag.
 
 Normally, even if it doesn't output text, any line of Liquid in your template will still output a blank line in your rendered HTML:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {% assign my_variable = "tomato" %}
@@ -18,7 +18,7 @@ Normally, even if it doesn't output text, any line of Liquid in your template wi
 
 Notice the blank line before "tomato" in the rendered template:
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 {% assign my_variable = "tomato" %}
 {{ my_variable }}
@@ -26,7 +26,7 @@ Notice the blank line before "tomato" in the rendered template:
 
 By including hyphens in your `assign` tag, you can strip the generated whitespace from the rendered template:
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {%- assign my_variable = "tomato" -%}
@@ -34,14 +34,14 @@ By including hyphens in your `assign` tag, you can strip the generated whitespac
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ``` text
 tomato
 ```
 
 If you don't want any of your tags to output whitespace, as a general rule you can add hyphens to both sides of all your tags (`{% raw %}{%-{% endraw %}` and `{% raw %}-%}{% endraw %}`):
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {% assign username = "John G. Chalmers-Smith" %}
@@ -63,7 +63,7 @@ If you don't want any of your tags to output whitespace, as a general rule you c
 {% endif %}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ``` liquid
 {%- assign username = "John G. Chalmers-Smith" -%}

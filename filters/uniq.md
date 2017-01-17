@@ -5,7 +5,7 @@ description: Liquid filter that removes duplicate items from an array.
 
 Removes any duplicate elements in an array.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
@@ -14,7 +14,7 @@ Removes any duplicate elements in an array.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 {% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
 

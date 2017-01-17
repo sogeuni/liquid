@@ -1,15 +1,15 @@
 ---
-title: Iteration
-description: An overview of iteration or 'loop' tags in the Liquid template language.
+title: 반복
+description: Liquid 템플릿 언어의 'loop' 태그나 반복에 대한 개요
 ---
 
-Iteration tags run blocks of code repeatedly.
+반복 태그는 코드 블록을 반복적으로 실행합니다.
 
 ## for
 
-Repeatedly executes a block of code. For a full list of attributes available within a `for` loop, see [forloop (object)](https://docs.shopify.com/themes/liquid/objects/for-loops).
+코드 블록을 반복 실행합니다. `for` 루프 내에서 사용 가능한 전체 속성 목록은 [forloop (object)](https://docs.shopify.com/themes/liquid/objects/for-loops)를 참고하세요.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
   {% for product in collection.products %}
@@ -18,16 +18,16 @@ Repeatedly executes a block of code. For a full list of attributes available wit
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 hat shirt pants
 ```
 
 ### break
 
-Causes the loop to stop iterating when it encounters the `break` tag.
+`break` 태그를 만나면 루프 반복을 중단합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% for i in (1..5) %}
@@ -40,16 +40,16 @@ Causes the loop to stop iterating when it encounters the `break` tag.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 1 2 3
 ```
 
 ### continue
 
-Causes the loop to skip the current iteration when it encounters the `continue` tag.
+`continue` 태그를 만나면 현재 반복 중이던 구문을 건너뜁니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% for i in (1..5) %}
@@ -62,18 +62,18 @@ Causes the loop to skip the current iteration when it encounters the `continue` 
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 1 2 3   5
 ```
 
-## for (parameters)
+## for (파라미터)
 
 ### limit
 
-Limits the loop to the specified number of iterations.
+지정된 반복횟수로 제한하여 루프를 실행합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if array = [1,2,3,4,5,6] -->
@@ -83,16 +83,16 @@ Limits the loop to the specified number of iterations.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 1 2
 ```
 
 ### offset
 
-Begins the loop at the specified index.
+지정한 인덱스에서 루프를 시작합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if array = [1,2,3,4,5,6] -->
@@ -102,16 +102,16 @@ Begins the loop at the specified index.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 3 4 5 6
 ```
 
 ### range
 
-Defines a range of numbers to loop through. The range can be defined by both literal and variable numbers.
+반복할 숫자 범위를 지정합니다. 범위는 리터럴 및 변수로 정의할 수 있습니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% for i in (3..5) %}
@@ -125,7 +125,7 @@ Defines a range of numbers to loop through. The range can be defined by both lit
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 3 4 5
 1 2 3 4
@@ -133,9 +133,9 @@ Defines a range of numbers to loop through. The range can be defined by both lit
 
 ### reversed
 
-Reverses the order of the loop.
+루프의 순서를 반대로 바꿉니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <!-- if array = [1,2,3,4,5,6] -->
@@ -145,18 +145,18 @@ Reverses the order of the loop.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 6 5 4 3 2 1
 ```
 
 ## cycle
 
-Loops through a group of strings and outputs them in the order that they were passed as parameters. Each time `cycle` is called, the next string that was passed as a parameter is output.
+문자열 그룹을 순환하여 순서대로 파리미터로 전달합니다. `cycle`이 호출될 때 마다 다음 문자열이 파리미터로 전달되어 출력됩니다.
 
-`cycle` must be used within a [for](#for) loop block.
+`cycle`은 [for](#for) 블록 내에서만 사용 가능 합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% cycle 'one', 'two', 'three' %}
@@ -166,7 +166,7 @@ Loops through a group of strings and outputs them in the order that they were pa
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 one
 two
@@ -174,20 +174,20 @@ three
 one
 ```
 
-Uses for `cycle` include:
+`cycle`은 다음과 같은 경우에 사용합니다:
 
--   applying odd/even classes to rows in a table
--   applying a unique class to the last product thumbnail in a row
+-   테이블의 행에 짝/홀수 클래스를 적용할 때
+-   행의 마지막 제품 썸네일에 유니크한 클래스를 적용할 때
 
-## cycle (parameters)
+## cycle (파라미터)
 
-`cycle` accepts a parameter called `cycle group` in cases where you need multiple `cycle` blocks in one template. If no name is supplied for the cycle group, then it is assumed that multiple calls with the same parameters are one group.
+하나의 템플릿에 여러개의 `cycle` 블록이 필요한 경우 `cycle group`이라고 하는 파라미터를 사용합니다. cycle group에 이름이 없다면 동일한 파라미터가 있는 여러 호출을 하나의 그룹으로 간주합니다.
 
 ## tablerow
 
-Generates an HTML table. Must be wrapped in opening `<table>` and closing `</table>` HTML tags.
+HTML 테이블을 생성합니다. 반드시 `<table>`과 `</table>` HTML 태그로 감싸야 합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 <table>
@@ -198,7 +198,7 @@ Generates an HTML table. Must be wrapped in opening `<table>` and closing `</tab
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```html
 <table>
   <tr class="row1">
@@ -224,13 +224,13 @@ Generates an HTML table. Must be wrapped in opening `<table>` and closing `</tab
 </table>
 ```
 
-## tablerow (parameters)
+## tablerow (파라미터)
 
 ### cols
 
-Defines how many columns the tables should have.
+테이블의 column 수를 정의합니다.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% tablerow product in collection.products cols:2 %}
@@ -239,7 +239,7 @@ Defines how many columns the tables should have.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```html
 <table>
   <tr class="row1">
@@ -271,7 +271,7 @@ Defines how many columns the tables should have.
 
 #### limit
 
-Exits the tablerow after a specific index.
+특정 인덱스 이후에 tablerow를 종료합니다.
 
 ```liquid
 {% raw %}
@@ -283,7 +283,7 @@ Exits the tablerow after a specific index.
 
 ### offset
 
-Starts the tablerow after a specific index.
+특정 인덱스 이후에 tablerow를 시작합니다.
 
 ```liquid
 {% raw %}
@@ -295,7 +295,7 @@ Starts the tablerow after a specific index.
 
 ### range
 
-Defines a range of numbers to loop through. The range can be defined by both literal and variable numbers.
+반복 할 숫자 범위를 정의합니다. 범위는 리터럴과 변수값이 가능합니다.
 
 ```liquid
 {% raw %}

@@ -7,21 +7,21 @@ Allows you to specify a fallback in case a value doesn't exist. `default` will s
 
 In this example, `product_price` is not defined, so the default value is used.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ product_price | default: 2.99 }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 2.99
 ```
 
 In this example, `product_price` is defined, so the default value is not used.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign product_price = 4.99 %}
@@ -29,14 +29,14 @@ In this example, `product_price` is defined, so the default value is not used.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 4.99
 ```
 
 In this example, `product_price` is empty, so the default value is used.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign product_price = "" %}
@@ -44,7 +44,7 @@ In this example, `product_price` is empty, so the default value is used.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 2.99
 ```

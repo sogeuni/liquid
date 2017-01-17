@@ -8,7 +8,7 @@ Removes any `nil` values from an array.
 For this example, assume `site.pages` is an array of content pages for a website, and some of these pages have an attribute called `category` that specifies their content category. If we `map` those categories to an array, some of the array items might be `nil` if any pages do not have a `category` attribute.
 
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ```liquid
 {% assign site_categories = site.pages | map: 'category' %}
@@ -19,7 +19,7 @@ For this example, assume `site.pages` is an array of content pages for a website
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
   business
   celebrities
@@ -32,7 +32,7 @@ For this example, assume `site.pages` is an array of content pages for a website
 
 By using `compact` when we create our `site_categories` array, we can remove all the `nil` values in the array.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 {% raw %}
 ```liquid
 {% assign site_categories = site.pages | map: 'category' | compact %}
@@ -43,7 +43,7 @@ By using `compact` when we create our `site_categories` array, we can remove all
 ```
 {% endraw %}
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
   business
   celebrities

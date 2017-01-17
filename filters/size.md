@@ -5,19 +5,19 @@ description: Liquid filter that returns the number of characters in a string or 
 
 Returns the number of characters in a string or the number of items in an array. `size` can also be used with dot notation (for example, `{% raw %}{{ my_string.size }}{% endraw %}`). This allows you to use `size` inside  tags such as conditionals.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {{ "Ground control to Major Tom." | size }}
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 {{ "Ground control to Major Tom." | size }}
 ```
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}
@@ -26,7 +26,7 @@ Returns the number of characters in a string or the number of items in an array.
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 {% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}
 

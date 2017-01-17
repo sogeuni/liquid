@@ -7,7 +7,7 @@ Creates an array of values by extracting the values of a named property from ano
 
 In this example, assume the object `site.pages` contains all the metadata for a website. Using `assign` with the `map` filter creates a variable that contains only the values of the `category` properties of everything in the `site.pages` object.
 
-<p class="code-label">Input</p>
+<p class="code-label">입력</p>
 ```liquid
 {% raw %}
 {% assign all_categories = site.pages | map: "category" %}
@@ -18,7 +18,7 @@ In this example, assume the object `site.pages` contains all the metadata for a 
 {% endraw %}
 ```
 
-<p class="code-label">Output</p>
+<p class="code-label">결과</p>
 ```text
 business
 celebrities
