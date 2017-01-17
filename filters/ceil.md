@@ -1,9 +1,9 @@
 ---
 title: ceil
-description: Liquid filter that gets the ceiling of a number by rounding up to the nearest integer.
+description: 가장 가까운 정수로 올림하는 Liquid 필터
 ---
 
-Rounds the input up to the nearest whole number. Liquid tries to convert the input to a number before the filter is applied.
+입력을 가장 가까운 정수로 올림합니다. Liquid는 필터를 적용하기 전에 입력 값을 숫자로 변환하려고 시도합니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -41,7 +41,7 @@ Rounds the input up to the nearest whole number. Liquid tries to convert the inp
 {{ 183.357 | ceil }}
 ```
 
-Here the input value is a string:
+여기서 입력값은 문자열입니다:
 
 <p class="code-label">입력</p>
 ```liquid

@@ -1,11 +1,11 @@
 ---
 title: map
-description: Liquid filter that creates an array of values by extracting a named property from an object.
+description: 객체에서 명명 된 속성을 추출하여 값 배열을 만드는 Liquid 필터.
 ---
 
-Creates an array of values by extracting the values of a named property from another object.
+다른 객체에서 명명 된 속성 값을 추출하여 값 배열을 만듭니다.
 
-In this example, assume the object `site.pages` contains all the metadata for a website. Using `assign` with the `map` filter creates a variable that contains only the values of the `category` properties of everything in the `site.pages` object.
+이 예제에서 'site.pages` 객체에는 웹 사이트의 모든 메타 데이터가 포함되어 있다고 가정합니다. `assign`에 `map` 필터를 사용하여 `site.pages` 객체에서 `category` 속성의 모든 값을 포함하는 변수를 생성합니다.
 
 <p class="code-label">입력</p>
 ```liquid

@@ -1,9 +1,9 @@
 ---
 title: reverse
-description: Liquid filter that reverses an array, or a string converted to an array.
+description: 배열이나 문자열을 뒤집어서 배열로 변환하는 Liquid 필터.
 ---
 
-Reverses the order of the items in an array. `reverse` cannot reverse a string.
+배열의 아이템의 순서를 반대로 바꿉니다. `reverse`는 문자열을 뒤집지는 못합니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -21,7 +21,7 @@ Reverses the order of the items in an array. `reverse` cannot reverse a string.
 {{ my_array | reverse | join: ", " }}
 ```
 
-`reverse` cannot be used directly on a string, but you can split a string into an array, reverse the array, and rejoin it by chaining together filters:
+`reverse`는 문자열에 직접 사용할 수 없지만 문자열을 배열로 나누어 배열을 뒤집은 다음, 필터를 연결하여 다시 결합할 수 있습니다:
 
 <p class="code-label">입력</p>
 ```liquid

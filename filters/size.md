@@ -1,9 +1,9 @@
 ---
 title: size
-description: Liquid filter that returns the number of characters in a string or the number of items in an array.
+description: 문자열의 문자 갯수 또는 배열의 아이템 갯수를 리턴하는 Liquid 필터.
 ---
 
-Returns the number of characters in a string or the number of items in an array. `size` can also be used with dot notation (for example, `{% raw %}{{ my_string.size }}{% endraw %}`). This allows you to use `size` inside  tags such as conditionals.
+문자열의 문자 갯수 또는 배열의 아이템 갯수를 리턴합니다. `size`는 점 표기법(`{% raw %}{{ my_string.size }}{% endraw %}`과 같이)과 함께 사용할 수 있습니다. 따라서, 조건식 태그 내에서 `size`를 사용할 수 있습니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -33,7 +33,7 @@ Returns the number of characters in a string or the number of items in an array.
 {{ my_array | size }}
 ```
 
-Using dot notation:
+점 표기법 사용:
 
 ```liquid
 {% raw %}

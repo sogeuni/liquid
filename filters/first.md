@@ -1,9 +1,9 @@
 ---
 title: first
-description: Liquid filter that returns the first item of an array.
+description: 배열의 첫 번째 아이템을 리턴하는 Liquid 필터.
 ---
 
-Returns the first item of an array.
+배열의 첫 번째 아이템을 리턴합니다.
 
 <p class="code-label">입력</p>
 ```liquid

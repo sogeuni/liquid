@@ -1,9 +1,9 @@
 ---
 title: downcase
-description: Liquid filter that coverts a string to lowercase.
+description: 문자열을 소문자로 변환하는 Liquid 필터.
 ---
 
-Makes each character in a string lowercase. It has no effect on strings which are already all lowercase.
+문자열의 모든 문자를 소문자로 변환합니다. 문자열이 이미 모두 소문자라면 아무런 변화가 없습니다.
 
 <p class="code-label">입력</p>
 ```liquid

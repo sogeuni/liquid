@@ -1,9 +1,9 @@
 ---
 title: newline_to_br
-description: Liquid filter that converts newlines in an input string to HTML <br> tags.
+description: 입력 문자열에서 줄바꿈을 HTML <br> 태그로 변환하는 Liquid 필터.
 ---
 
-Replaces every newline (`\n`) with an HTML line break (`<br>`).
+모든 줄바꿈(`\n`)을 HTML 줄바꿈(`<br>`)으로 변경합니다.
 
 <p class="code-label">입력</p>
 ```liquid

@@ -1,9 +1,9 @@
 ---
 title: strip_html
-description: Liquid filter that removes HTML tags from a string.
+description: 문자열에서 HTML 태그를 제거하는 Liquid 필터
 ---
 
-Removes any HTML tags from a string.
+문자열에서 HTML 태그를 제거합니다.
 
 <p class="code-label">입력</p>
 ```liquid

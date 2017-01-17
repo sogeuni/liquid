@@ -1,9 +1,9 @@
 ---
 title: escape
-description: Liquid filter that escapes URL-unsafe characters in a string.
+description: 문자열에서 URL에 안전하지 않은 문자을 이스케이프 처리하는 Liquid 필터.
 ---
 
-Escapes a string by replacing characters with escape sequences (so that the string can be used in a URL, for example). It doesn't change strings that don't have anything to escape.
+문자열의 문자를 이스케이프 시퀀스로 변환합니다(따라서 URL에서 사용할 수 있게 됩니다). 이스케이프할 문자가 없으면 문자열을 변환하지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid

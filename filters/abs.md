@@ -29,7 +29,7 @@ description: 절대값을 얻기 위한 Liquid 필터
 4
 ```
 
-`abs` will also work on a string if the string only contains a number.
+문자열 내에 숫자만 있다면 `abs`는 문자열에서도 동작합니다.
 
 <p class="code-label">입력</p>
 ```liquid

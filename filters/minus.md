@@ -1,9 +1,9 @@
 ---
 title: minus
-description: Liquid filter that subtracts one number from another.
+description: 숫자에서 다른 숫자를 빼는 Liquid 필터.
 ---
 
-Subtracts a number from another number.
+숫자에서 다른 숫자를 뺍니다.
 
 <p class="code-label">입력</p>
 ```liquid

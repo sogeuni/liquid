@@ -1,9 +1,9 @@
 ---
 title: append
-description: Liquid filter that appends a string to another string.
+description: 문자열에 다른 문자열을 추가하는 Liquid 필터
 ---
 
-Concatenates two strings and returns the concatenated value.
+두 개의 문자열을 연결하고 연결된 값을 리턴합니다. 
 
 <p class="code-label">입력</p>
 ```liquid
@@ -17,7 +17,7 @@ Concatenates two strings and returns the concatenated value.
 {{ "/my/fancy/url" | append: ".html" }}
 ```
 
-`append` can also be used with variables:
+`append`는 변수에도 사용할 수 있습니다.
 
 <p class="code-label">입력</p>
 ```liquid

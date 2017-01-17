@@ -1,9 +1,9 @@
 ---
 title: last
-description: Liquid filter that gets the last value in an array.
+description: 배열의 마지막 값을 리턴하는 Liquid 필터.
 ---
 
-Returns the last item of an array.
+배열의 마지막 아이템을 리턴합니다.
 
 <p class="code-label">입력</p>
 ```liquid

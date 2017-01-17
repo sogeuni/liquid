@@ -1,9 +1,9 @@
 ---
 title: url_encode
-description: Liquid filter that encodes URL-unsafe characters in a string.
+description: URL에서 사용할 수 없는 문자열을 인코딩하는 Liquid 필터.
 ---
 
-Converts any URL-unsafe characters in a string into percent-encoded characters.
+문자열 내의 URL에서 사용할 수 없는 문자를 %형태의 문자로 인코딩합니다.
 
 <p class="code-label">입력</p>
 ```liquid

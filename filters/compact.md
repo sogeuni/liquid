@@ -1,12 +1,11 @@
 ---
 title: compact
-description: Liquid filter that removes nil values from an array.
+description: 배열에서 nil 값을 제거하는 Liquid 필터
 ---
 
-Removes any `nil` values from an array.
+배열에서 모든 `nil` 값을 제거합니다.
 
-For this example, assume `site.pages` is an array of content pages for a website, and some of these pages have an attribute called `category` that specifies their content category. If we `map` those categories to an array, some of the array items might be `nil` if any pages do not have a `category` attribute.
-
+예를 들어 `site.pages`는 웹사이트 컨텐츠 페이지의 배열이고 이들 중 일부 페이지는 `category`라고 불리는 자신만의 특정 카테고리 속성을 가진다고 할 때, 카테고리들을 배열에 `map`한다면 `category` 속성을 가지지 않는 페이지 때문에 배열 항목의 일부에 `nil`이 추가될 수 있습니다.
 
 <p class="code-label">입력</p>
 {% raw %}
@@ -30,7 +29,7 @@ For this example, assume `site.pages` is an array of content pages for a website
   technology
 ```
 
-By using `compact` when we create our `site_categories` array, we can remove all the `nil` values in the array.
+`site_categories` 배열을 만들 때 `compact`를 사용하여 배열 내의 모든 `nil` 값을 제거할 수 있습니다.
 
 <p class="code-label">입력</p>
 {% raw %}

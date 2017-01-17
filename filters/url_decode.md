@@ -1,9 +1,9 @@
 ---
 title: url_decode
-description: Liquid filter that decodes percent-encoded characters in a string.
+description: 퍼센트 인코딩된 문자열을 디코딩하는 Liquid 필터.
 ---
 
-Decodes a string that has been encoded as a URL or by [`url_encode`]({{ '/filters/url_encode' | prepend: site.baseurl }}).
+URL 혹은 [`url_encode`]({{ '/filters/url_encode' | prepend: site.baseurl }})로 인코딩된 문자열을 디코딩합니다.
 
 <p class="code-label">입력</p>
 ```liquid

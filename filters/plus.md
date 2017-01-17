@@ -1,9 +1,9 @@
 ---
 title: plus
-description: Liquid filter that adds a number to another number.
+description: 숫자에 다른 숫자를 더하는 Liquid 필터.
 ---
 
-Adds a number to another number.
+숫자에 다른 숫자를 더합니다.
 
 <p class="code-label">입력</p>
 ```liquid

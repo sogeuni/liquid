@@ -1,9 +1,9 @@
 ---
 title: sort_natural
-description: Liquid filter that sorts an array in case-insensitive order.
+description: 대소문자를 구분하지 않는 순서로 배열을 정렬하는 Liquid 필터.
 ---
 
-Sorts items in an array by a property of an item in the array.
+배열의 아이템을 속성 값에 따라 정렬합니다.
 
 <p class="code-label">입력</p>
 ```liquid

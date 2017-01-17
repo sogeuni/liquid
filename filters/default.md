@@ -1,11 +1,11 @@
 ---
 title: default
-description: Liquid filter that specifies a fallback in case a value doesn't exist.
+description: 값이 존재하지 않는 경우 특정값으로 대체하기 위한 Liquid 필터
 ---
 
-Allows you to specify a fallback in case a value doesn't exist. `default` will show its value if the left side is `nil`, `false`, or empty.
+값이 존재하지 않는 경우 대체할 특정값을 지정할 수 있습니다. `default`는 좌변이 `nil`, `false` 또는 빈 값일 경우에 표시됩니다.
 
-In this example, `product_price` is not defined, so the default value is used.
+예를 들어 `product_price`가 정의되지 않았다면 기본값이 사용됩니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -19,7 +19,7 @@ In this example, `product_price` is not defined, so the default value is used.
 2.99
 ```
 
-In this example, `product_price` is defined, so the default value is not used.
+다음 예제에서 `product_price` 값은 정의되었으므로 기본값은 사용되지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -34,7 +34,7 @@ In this example, `product_price` is defined, so the default value is not used.
 4.99
 ```
 
-In this example, `product_price` is empty, so the default value is used.
+다음 예제에서 `product_price` 값은 빈 값이므로 기본값이 사용됩니다.
 
 <p class="code-label">입력</p>
 ```liquid

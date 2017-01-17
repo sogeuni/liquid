@@ -1,9 +1,9 @@
 ---
 title: uniq
-description: Liquid filter that removes duplicate items from an array.
+description: 배열에서 중복되는 아이템을 제거하는 Liquid 필터.
 ---
 
-Removes any duplicate elements in an array.
+배열에서 중복되는 아이템을 제거합니다.
 
 <p class="code-label">입력</p>
 ```liquid

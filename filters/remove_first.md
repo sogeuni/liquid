@@ -1,9 +1,9 @@
 ---
 title: remove_first
-description: Liquid filter that removes the first occurence of a given substring from a string.
+description: 문자열에서 주어진 하위 문자열과 첫번째로 일치하는 부분을 제거하는 Liquid 필터.
 ---
 
-Removes only the first occurrence of the specified substring from a string.
+문자열에서 지정된 하위 문자열과 첫번째로 일치하는 부분을 제거합니다.
 
 <p class="code-label">입력</p>
 ```liquid

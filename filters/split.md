@@ -1,9 +1,9 @@
 ---
 title: split
-description: Liquid filter that splits a string into an array using separators.
+description: 구분자를 사용하여 문자열을 분할하여 배열로 만드는 Liquid 필터.
 ---
 
-Divides an input string into an array using the argument as a separator. `split` is commonly used to convert comma-separated items from a string to an array.
+인자를 구분자로 사용하여 입력 문자열을 배열로 분할합니다. 일반적으로 `split`은 문자열에서 쉼표로 구분된 항목을 배열로 변환하는 데 사용합니다.
 
 <p class="code-label">입력</p>
 ```liquid

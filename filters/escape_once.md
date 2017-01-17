@@ -1,9 +1,9 @@
 ---
 title: escape_once
-description: Liquid filter that escapes URL-unsafe characters in a string once.
+description: 문자열에서 URL에 안전하지 않은 문자을 이스케이프 처리하는 Liquid 필터.
 ---
 
-Escapes a string without changing existing escaped entities. It doesn't change strings that don't have anything to escape.
+이미 이스케이프 된 기존 엔터티를 변경하지 않고 문자열을 이스케이프 처리합니다. 이스케이프 할 것이 없는 문자열은 변경되지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid

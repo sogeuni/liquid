@@ -1,11 +1,11 @@
 ---
 title: slice
-description: Liquid filter that returns a substring from a given position in a string.
+description: 문자열에서 주어진 위치의 하위문자열을 리턴하는 Liquid 필터.
 ---
 
-Returns a substring of 1 character beginning at the index specified by the argument passed in. An optional second argument specifies the length of the substring to be returned.
+문자열에서 지정된 위치의 한문자를 리턴합니다. 옵션으로 두 번째 인자는 리턴할 하위 문자의 갯수를 지정합니다.
 
-String indices are numbered starting from 0.
+문자열의 인덱스는 0부터 시작합니다.
 
 <p class="code-label">입력</p>
 ```liquid
@@ -43,7 +43,7 @@ String indices are numbered starting from 0.
 {{ "Liquid" | slice: 2, 5 }}
 ```
 
-If the first parameter is a negative number, the indices are counted from the end of the string:
+첫번째 인자가 음수라면 인덱스는 문자열의 끝부터 계산됩니다:
 
 <p class="code-label">입력</p>
 ```liquid

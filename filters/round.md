@@ -1,9 +1,9 @@
 ---
 title: round
-description: Liquid filter that rounds a number to the nearest integer.
+description: 정수를 가장 가까운 정수로 반올림하는 Liquid 필터.
 ---
 
-Rounds an input number to the nearest integer or, if a number is specified as an argument, to that number of decimal places.
+정수를 가장 가까운 정수로 반올림하거나, 인자가 숫자로 지정된 경우 반올림 할 소숫점 자리를 지정하여 반올림합니다.
 
 <p class="code-label">입력</p>
 ```liquid

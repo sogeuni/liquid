@@ -1,9 +1,9 @@
 ---
 title: lstrip
-description: Liquid filter that removes whitespace from the left side of a string.
+description: 문자열의 왼쪽 공백을 제거하는 Liquid 필터.
 ---
 
-Removes all whitespaces (tabs, spaces, and newlines) from the beginning of a string. The filter does not affect spaces between words.
+문자열의 시작 부분의 모든 whitespace(탭, 공백 및 줄바꿈)을 제거합니다. 단어 사이의 공백에는 적용되지 않습니다.
 
 <p class="code-label">입력</p>
 ```liquid

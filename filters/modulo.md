@@ -1,9 +1,9 @@
 ---
 title: modulo
-description: Liquid filter that returns the remainder from a division operation.
+description: 나누기 연산에서 나머지를 반환하는 Liquid 필터.
 ---
 
-Returns the remainder of a division operation.
+나누기 연산의 나머지를 리턴합니다.
 
 <p class="code-label">입력</p>
 ```liquid

@@ -1,9 +1,9 @@
 ---
 title: sort
-description: Liquid filter that sorts an array in case-sensitive order.
+description: 대/소문자를 구분하여 배열을 정렬하는 Liquid 필터.
 ---
 
-Sorts items in an array by a property of an item in the array. The order of the sorted array is case-sensitive.
+배열의 아이템을 속성 값에 따라 정렬합니다. 정렬 순서는 대/소문자를 구분합니다.
 
 <p class="code-label">입력</p>
 ```liquid

@@ -1,9 +1,9 @@
 ---
 title: times
-description: Liquid filter that multiplies a number by another number.
+description: 숫자에 다른 숫자를 곱하는 Liquid 필터.
 ---
 
-Multiplies a number by another number.
+숫자에 다른 숫자를 곱합니다.
 
 <p class="code-label">입력</p>
 ```liquid
