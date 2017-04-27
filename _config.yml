@@ -2,8 +2,8 @@ title: Liquid 템플릿 언어
 description: Liquid는 템플릿 언어이며 렌더링 엔진과 함께합니다. 보안을 위해 만들어졌기 때문에, 사용자가 정의한 템플릿을 렌더링하는 데 최적화되어 있습니다.
 
 # Build settings
-baseurl:                /liquid-manual # the subpath of your site, e.g. /blog/
-url:                    https://sogn.io # the base hostname & protocol for your site
+baseurl:                 # the subpath of your site, e.g. /blog/
+url:                    https://liquid.sogn.io # the base hostname & protocol for your site
 permalink:              pretty
 exclude:
   - README.md
